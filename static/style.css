@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+/* Reset CSS */
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+#logo{
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 0px 14px;
+    margin-right: 40px;
+    font-size: 20px;
+}
+#logo img{
+    height: 42px;
+}
+
+#navbar{
+    background-color: #798C82;
+    padding: 13px 14px;
+    font-family: 'Lobster', cursive;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#navbar li a{
+    text-decoration: none;
+    padding: 13px 30px;
+    color: white;
+    font-size: 20px;
+}
+#navbar li a:hover{
+    color: black;
+    font-weight: bold;
+}
+
+#navbar li{
+    list-style: none;
+}
+
+#bookSection{
+    height: 100%;
+    background-color: #d9e2dd;
+}
+
+#welcome{
+    height: 200px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #505653;
+    color: #d9e2dd;
+    font-family: 'Dancing Script', cursive;
+    font-size: 36px;
+    background: url('/static/booksonshelf.jpg') no-repeat center center/cover;
+}
+#bookSection h1{
+    text-align: center;
+    padding: 12px;
+    font-family: 'Arizonia', cursive;
+    font-size: 35px;
+}
+.right{
+    margin-left: 1060px;
+    margin-right: -32px;
+}
+#choose{
+    font-family: 'Lobster', cursive;
+    color: white;
+}
+li img{
+    height: 30px;
+    margin: -8px 7px;
+}
+.card{
+    display: inline-block;
+    border: 2px solid #586860;
+    border-radius: 8px;
+    width: 32%;
+    height: 290px;
+    margin: 10px 10px;
+    padding: 0px 10px;
+}
+.card-box{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.card h3{
+    text-align: center;
+    margin: 18px;
+    font-family: 'Lobster', cursive;
+}
+.card-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-img{
+    height: 200px;
+}
+.card-img img{
+    height: 195px;
+}
+.card-content{
+    padding: 10px 0px;
+}
+.card-content p{
+    padding: 26px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+
+.small{
+    font-size: 25px;
+}
