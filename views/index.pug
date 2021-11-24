@@ -1,0 +1,94 @@
+//- index.pug
+doctype html
+html
+  head
+    title EBooks
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            div#logo
+              img(src="/static/logo.png", alt="logo")
+              | EBooks
+            li #[a(href='/') Home]
+            li #[a(class='right' href='/cart') Cart]
+              img(src='/static/cart.png')
+    section#welcome
+      h1 Welcome to EBooks Store!
+    section#bookSection
+        h1 Happy reading!
+        div.card 
+          h3 The Alchemist 
+          div.card-box
+            div.card-img
+              img(src="/static/alchemist.jpg", alt="alchemist") 
+            div.card-content
+              p Paulo Cohelo
+              p The Alchemist is a novel by Brazilian author Paulo Coelho that was first published in 1988. Originally written in Portuguese, it became a widely translated international bestseller. 
+        div.card 
+          h3 The Archer 
+          div.card-box
+            div.card-img
+              img(src="/static/archer.jpeg", alt="archer") 
+            div.card-content
+              p Paulo Cohelo
+              p In The Archer we meet Tetsuya, a man once famous for his prodigious gift with a bow and arrow but who has since retired from public life, and the boy who comes searching for him. 
+        div.card 
+          h3 Three men in a boat
+          div.card-box
+            div.card-img
+              img(src="/static/boat.jpg", alt="threemeninaboat") 
+            div.card-content
+              p Jerome K. Jerome
+              p Three Men in a Boat, published in 1889, is a humorous account by English writer Jerome K. Jerome of a two-week boating holiday on the Thames from Kingston upon Thames to Oxford and back to Kingston.
+        div.card 
+          h3 Harry potter and the Sorcerer's Stone
+          div.card-box
+            div.card-img
+              img(src="/static/harrypotter.jpg", alt="harrypotter") 
+            div.card-content
+              p J.K. Rowling
+              p Harry Potter and the Sorcerer's Stone is a fantasy novel written by British author J. K. Rowling.
+        div.card 
+          h3 The Hobbit
+          div.card-box
+            div.card-img
+              img(src="/static/hobbit.jpg", alt="hobbit") 
+            div.card-content
+              p J.R.R. Tolkien 
+              p The Hobbit, or There and Back Again is a children's fantasy novel by English author J. R. R. Tolkien. 
+        div.card 
+          h3 The Lord of the Rings
+          div.card-box
+            div.card-img
+              img(src="/static/lordoftherings.jpg", alt="LOTR") 
+            div.card-content
+              p J.R.R. Tolkien
+              p The Lord of the Rings is an epic high-fantasy novel by English author and scholar J. R. R. Tolkien. 
+        div.card 
+          h3 The Immortals of Meluha
+          div.card-box
+            div.card-img
+              img(src="/static/meluha.jpg", alt="meluha") 
+            div.card-content
+              p Amish 
+              p The Immortals of Meluha is the first book of Amish Tripathi and the first book of Shiva Trilogy.
+        div.card 
+          h3 The Monk who sold his Ferrari
+          div.card-box
+            div.card-img
+              img(src="/static/monk.jpg", alt="MWSHF") 
+            div.card-content
+              p Robin Sharma
+              p The Monk Who Sold His Ferrari is a self-help book by Robin Sharma, a writer and motivational speaker. 
+        div.card 
+          h3 Pride and Prejudice
+          div.card-box
+            div.card-img
+              img(src="/static/Prideandprejudice.jpg", alt="PAP") 
+            div.card-content
+              p Jane Austen
+              p Pride and Prejudice is an 1813 novel of manners written by Jane Austen.
+        
+    

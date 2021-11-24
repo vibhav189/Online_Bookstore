@@ -1,0 +1,17 @@
+doctype html 
+html
+  head
+    title EBooks
+    block scripts
+    block style 
+  body
+    nav#navbar
+        ul
+            div#logo
+              img(src="/static/logo.png", alt="logo")
+              | EBS
+            li #[a(href='/') Home]
+            li #[a(class="right" href='/cart') Cart]
+              img(src='/static/cart.png')
+    block content
+    

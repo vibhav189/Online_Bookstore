@@ -1,0 +1,29 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+block style
+    style
+      include ../static/style.css
+      include ../static/cart.css
+block content
+    div.container
+        h1 Cart 
+        form(action="/cart" method='post', class='myForm')
+            input(type="text", class='myInput', name='name', placeholder='Enter your name') 
+            input(type="phone", class='myInput', name='phone', placeholder='Enter your phone number') 
+            input(type="email", class='myInput', name='email', placeholder='Enter your e-mail address') 
+            input(type="text", class='myInput', name='address', placeholder='Enter your address') 
+            <label for="books" id='choose'>Choose Books:</label>
+            <select name="books" id="books" multiple class="myInput">
+                <option name="alchemist" value="The Alchemist- Paulo Cohelo">The Alchemist- Paulo Cohelo</option>
+                <option name="archer" value="The Archer- Paulo Cohelo">The Archer- Paulo Cohelo</option>
+                <option name="boat" value="Three men in a boat- Jerome K Jerome">Three men in a boat- Jerome K Jerome</option>
+                <option name="harry" value="Harry potter and the Sorcerer's Stone">Harry potter and the Sorcerer's Stone</option>
+                <option name="hobbit" value="The Hobbit">The Hobbit</option>
+                <option name="lotr" value="Lord of the rings">Lord of the rings</option>
+                <option name="meluha" value="The Immortals of Meluha">The Immortals of Meluha</option>
+                <option name="monk" value="The Monk who sold his Ferrari">The Monk who sold his Ferrari</option>
+                <option name="pap" value="Pride and Prejudice">Pride and Prejudice</option>
+            </select>
+            button.btn Submit  
